@@ -1,0 +1,23 @@
+
+<script>
+    document.querySelector(".fun-button").addEventListener("click", function() {
+        let card = document.querySelector(".profile-card");
+        let button = document.querySelector(".fun-button");
+        let sound = document.querySelector("#glugSound");
+
+        // Play the glug sound
+        sound.play();
+
+        // Add the glug-glug background animation
+        card.classList.add("wavy-effect");
+
+        // Make the button move (wiggle)
+        button.classList.add("wiggle-button");
+
+        // Remove effects after animation ends
+        setTimeout(() => {
+            card.classList.remove("wavy-effect");
+            button.classList.remove("wiggle-button");
+        }, 2500);
+    });
+</script>

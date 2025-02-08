@@ -1,0 +1,48 @@
+
+.profile-card:hover {
+    background-color: lightyellow; /* light yellow when hovered */
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: 0.3s ease-in-out; /* Smooth animation */
+}
+.fun-button {
+    background-color: hotpink;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.fun-button:hover {
+    background-color: lightpink;
+    color: black;
+    transform: scale(1.1);
+}
+.fun-button:active {
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+@keyframes pina-glug {
+    0% { background-color: #fdf6e3; transform: scale(1); } /* Soft creamy base */
+    25% { background-color: #ffddaa; transform: scale(1.02); } /* Light coconut-pineapple hint */
+    50% { background-color: #ffcc66; transform: scale(0.98); } /* Rich tropical glow */
+    75% { background-color: #ffddaa; transform: scale(1.02); }
+    100% { background-color: #fdf6e3; transform: scale(1); }
+}
+
+.wavy-effect {
+    animation: pina-glug 2.5s ease-in-out;
+}
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-5deg); }
+    40% { transform: rotate(5deg); }
+    60% { transform: rotate(-5deg); }
+    80% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+.wiggle-button {
+    animation: wiggle 0.6s ease-in-out infinite alternate;
+}
